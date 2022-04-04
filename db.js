@@ -6,5 +6,10 @@ const pool = new Pool({
     port: 5432,
     database: "perntodo"
 });
-
+// const poolConfig = process.env.DATABASE_URL ? {
+//     connectionString: process.env.DATABASE_URL,
+//     ssl: {
+//       rejectUnauthorized: false
+//     }
+//   } : pool;
 module.exports = pool;
